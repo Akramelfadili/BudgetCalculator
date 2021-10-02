@@ -1,0 +1,43 @@
+@import '../../MainStyles.scss';
+
+.budget-items{
+     display: flex;
+     padding: 50px;
+     align-items: center;
+     justify-content: center;
+
+     .budget-items-container{
+          display: flex;
+          max-width: 680px;
+          height: 100%;
+          width: 100%;
+
+          .income,.expenses{
+               display: flex;
+               flex-direction: column;
+               flex-basis: 0;
+               flex-grow: 1;
+
+               h1{
+                    font-family: 'Courier New', Courier, monospace;
+                    font-size: 24px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+               }
+              
+          }
+          .income{
+               margin-right: 40px;
+               
+               h1{
+                    color: $green;
+               }
+          }
+
+          .expenses{
+               h1{
+                    color: $red;
+               }
+          }
+     }
+}

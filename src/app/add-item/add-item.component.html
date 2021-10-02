@@ -1,0 +1,15 @@
+<form #itemform="ngForm" (ngSubmit)="onSubmit(itemform)">
+     <div class="container">
+          <div class="mb-3 mt-8">
+               <input type="number" required [ngModel]="item.amount" name="amount" style="width : 100px;" class="form-control" id="" placeholder="Number">
+          </div>
+
+          <div class="mb-3">
+               <input type="text" required name="description"  class="form-control" [ngModel]="item.description" placeholder="Description">
+          </div>
+          <div>
+                  <button type="submit" class="btn btn-primary" [disabled]="!itemform.valid">Add</button>
+          </div>
+     </div>
+     
+</form>
